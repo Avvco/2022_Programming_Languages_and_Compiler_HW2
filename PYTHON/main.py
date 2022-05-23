@@ -1,5 +1,4 @@
 import csv
-import pandas as pd
 
 def get_level(num):
     if(num >= 90):
@@ -25,14 +24,12 @@ def get_level(num):
     else:
         return 'E'
 
-df = pd.read_csv('HW2data.csv')
+file = open('HW2data.csv')
+reader = csv.reader(file)
+data = list(reader)
 
-total = []
-level = []
-for i in range(0, len(df)):
-    total.append(0.1*(df['HW1'][i]+df['HW2'][i]+df['HW3'][i]) + 0.3*df['Midterm'][i] + 0.4*df['Final'][i])
-    level.append(get_level(total[i]))
+for i in range(1, len(data)):
+        score = 0.1*(float(data[i][3]) + float(data[i][4]) + float(data[i][5])) + 0.3*float(data[i][6]) + 0.4*float(data[i][7])
+        level = get_level(score)
+        print(data[i][2], level)
 
-df['Total'] = total
-df['Level'] = level
-print(df)
