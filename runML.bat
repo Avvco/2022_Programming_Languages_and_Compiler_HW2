@@ -1,3 +1,2 @@
-docker run -it --rm -v %cd%/ML:/tmp -w /tmp shwestrick/mpl /bin/bash main.sml
-
+docker run -it --rm -v %cd%/ML:/tmp -w /tmp msgodf/dockerfile-smlnj main.sml
 PAUSE
