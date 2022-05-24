@@ -32,4 +32,3 @@ for i in range(1, len(data)):
         score = 0.1*(float(data[i][3]) + float(data[i][4]) + float(data[i][5])) + 0.3*float(data[i][6]) + 0.4*float(data[i][7])
         level = get_level(score)
         print(data[i][2], level)
-
