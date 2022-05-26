@@ -1,4 +1,4 @@
-df <- read.csv("No.csv")
+#df <- read.csv("No.csv")
 #df <- read.csv("file.csv", header = FALSE)  #讀取 CSV 檔案（沒有標題列）
 
 for(i in c(1:10)){ 
