@@ -79,7 +79,7 @@ public class App {
       counter++;
     }
     for(Student student : students) {
-      System.out.println(student.getName() + " " + gradesTable(student.getGrade()));
+      System.out.println(student.getNo() + "\t" + student.getId() + "\t" + student.getName() + "\t" + student.getGrade() + "\t" + gradesTable(student.getGrade()));
     }
   }
 
