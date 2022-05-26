@@ -1,31 +1,33 @@
-#df <- read.csv("No.csv")
-#df <- read.csv("file.csv", header = FALSE)  #讀取 CSV 檔案（沒有標題列）
-
-for(i in c(1:10)){ 
+data <- read.csv("HW2data.csv")
+print (data)
+cat("\n")
+for(i in c(1:10))
+{ 
   num <- 0
-  num <- num + 0.1*[i,4] +0.1*[i,5] +0.1*[i,6] +0.3*[i,7] +0.4*[i,8]
-  cat(num,sep="\n")
+  num <- data[i,4]*0.1 + data[i,5]*0.1 + data[i,6]*0.1 + data[i,7]*0.3 + data[i,8]*0.4
+  
   if(num >= 90){
-        cat ('A+',sep="\n")
+        cat (data[i,3], num,'A+',sep="\t")
    }else if(num >= 85){
-       cat ('A',sep="\n")
+       cat (data[i,3], num,'A',num,sep="\t")
    }else if(num >= 80){
-       cat ('A-',sep="\n")
+       cat (data[i,3], num,'A-',sep="\t")
    }else if(num >= 77){
-       cat ('B+',sep="\n")
+       cat (data[i,3], num,'B+',sep="\t")
    }else if(num >= 73){
-       cat ('B',sep="\n")
+       cat (data[i,3], num,'B',sep="\t")
    }else if(num >= 70){
-       cat ('B-',sep="\n")
+       cat (data[i,3], num,'B-',sep="\t")
    }else if(num >= 67){
-       cat ('C+',sep="\n")
+       cat (data[i,3], num,'C+',sep="\t")
    }else if(num >= 63){
-       cat ('C',sep="\n")
+       cat (data[i,3], num,'C',sep="\t")
    }else if(num >= 60){
-       cat ('C-',sep="\n")
+       cat (data[i,3], num,'C-',sep="\t")
    }else if(num >= 50){
-       cat ('D',sep="\n")
+       cat (data[i,3], num,'D',sep="\t")
    }else{
-       cat ('E',sep="\n")
+       cat (data[i,3], num,'E',sep="\t")
    }
+   cat("\n")
 }
