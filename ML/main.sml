@@ -9,5 +9,11 @@ val Final = [66.0, 64.0, 62.0, 55.0, 67.0, 66.0, 43.0, 54.0, 75.0, 75.0];
 
 
 List.nth (Name,0);
-val a = 0.1*( List.nth (HW1,0) + List.nth (HW2,0) + List.nth (HW3,0) ) +0.3* List.nth (Mid,0) + 0.4*List.nth (Final,0);    
+val a = 0.1*( List.nth (HW1,0) + List.nth (HW2,0) + List.nth (HW3,0) ) +0.3* List.nth (Mid,0) + 0.4*List.nth (Final,0);
 
+
+
+
+
+(*Terminate Process*)
+OS.Process.exit(OS.Process.success);
