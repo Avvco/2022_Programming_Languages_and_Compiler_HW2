@@ -35,9 +35,9 @@ fun show n =
     if n > 9 then
         ()
     else (
-        print (List.nth (Name,n) ^ " " ^ 
-            Real.toString(0.1*(List.nth (HW1,n) + List.nth (HW2,n) + List.nth (HW3,n)) + 0.3*List.nth (Mid,n) + 0.4*List.nth (Final,n)) ^ " " ^ 
-            level(0.1*(List.nth (HW1,n) + List.nth (HW2,n) + List.nth (HW3,n)) + 0.3*List.nth (Mid,n) + 0.4*List.nth (Final,n))^"\n");
+        print (Int.toString(List.nth (NO,n)) ^ "\t" ^ Int.toString(List.nth (ID,n)) ^ "\t" ^ List.nth (Name,n) ^ "\t" ^ 
+            Real.toString(0.1*(List.nth (HW1,n) + List.nth (HW2,n) + List.nth (HW3,n)) + 0.3*List.nth (Mid,n) + 0.4*List.nth (Final,n)) ^ "\t" ^ 
+            level(0.1*(List.nth (HW1,n) + List.nth (HW2,n) + List.nth (HW3,n)) + 0.3*List.nth (Mid,n) + 0.4*List.nth (Final,n)) ^ "\n");
             show (n + 1)
         );
 
