@@ -1,26 +1,26 @@
 fun level num =
-    if(num >= 90.0) then
-        "A+"
-    else if(num >= 85.0) then
-        "A"
-    else if(num >= 80.0) then
-        "A-"
-    else if(num >= 77.0) then
-        "B+"
-    else if(num >= 73.0) then
-        "B"
-    else if(num >= 70.0) then
-        "B-"
-    else if(num >= 67.0) then
-        "C+"
-    else if(num >= 63.0) then
-        "C"
-    else if(num >= 60.0) then
-        "C-"
-    else if(num >= 50.0) then
-        "D"
+    if(num <= 49) then
+         "E"
+    else if(num <= 59) then
+         "D"
+    else if(num <= 62) then
+         "C-"
+    else if(num <= 66) then
+         "C"
+    else if(num <= 69) then
+         "C+"
+    else if(num <= 72) then
+         "B-"
+    else if(num <= 76) then
+         "B"
+    else if(num <= 79) then
+         "B+"
+    else if(num <= 84) then
+         "A-"
+    else if(num <= 89) then
+         "A"
     else
-        "E"
+        "A+"
 
 val NO = [1,2,3,4,5,6,7,8,9,10]
 val ID = [410021001, 410021002, 410021003, 410021004, 410021005, 410021006, 410021007, 410021008, 410021009, 410021010]
