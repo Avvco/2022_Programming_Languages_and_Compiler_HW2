@@ -1,6 +1,7 @@
 import csv
 
 def get_level(num):
+    num = round(num,1)
     if(num >= 90):
         return 'A+'
     elif(num >= 85):

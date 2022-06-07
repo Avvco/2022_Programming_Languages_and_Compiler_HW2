@@ -6,6 +6,8 @@ for(i in c(1:10))
   num <- 0
   num <- data[i,4]*0.1 + data[i,5]*0.1 + data[i,6]*0.1 + data[i,7]*0.3 + data[i,8]*0.4
   
+
+
   if(num >= 90){
         cat (data[i,1], data[i,2], data[i,3], num,'A+',sep="\t")
    }else if(num >= 85){
