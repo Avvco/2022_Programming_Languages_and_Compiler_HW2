@@ -51,13 +51,13 @@ public class App {
             case 0: 
               student.setNo((int)row.getCell(i).getNumericCellValue());
               break;
-            case 1: 
+            case 1:
               student.setId(new BigDecimal(row.getCell(i).toString()).toPlainString());
               break;
-            case 2: 
+            case 2:
               student.setName(row.getCell(i).getStringCellValue());
               break;
-            case 3: 
+            case 3:
               student.setHw1(row.getCell(i).getNumericCellValue());
               break;
             case 4: 
@@ -84,27 +84,26 @@ public class App {
   }
 
   private static String gradesTable(double grade) {
-    if(grade >= 90)
-      return "A+";
-    else if(grade >= 85)
-      return "A";
-    else if(grade >= 80)
-      return "A-";
-    else if(grade >= 77)
-      return "B+";
-    else if(grade >= 73)
-      return "B";
-    else if(grade >= 70)
-      return "B-";
-    else if(grade >= 67)
-      return "C+";
-    else if(grade >= 63)
-      return "C";
-    else if(grade >= 60)
-      return "C-";
-    else if(grade >= 50)
-      return "D";
-    else
+    if(grade <= 49)
       return "E";
+    else if(grade <= 59)
+        return "D";
+    else if(grade <= 62)
+        return "C-";
+    else if(grade <= 66)
+        return "C";
+    else if(grade <= 69)
+        return "C+";
+    else if(grade <= 72)
+        return "B-";
+    else if(grade <= 76)
+        return "B";
+    else if(grade <= 79)
+        return "B+";
+    else if(grade <= 84)
+        return "A-";
+    else if(grade <= 89)
+        return "A";
+    return "A+";
   }
 }
