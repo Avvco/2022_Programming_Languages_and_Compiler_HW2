@@ -65,7 +65,7 @@ public class Student {
 
   public double getGrade() {
     double grade = hw1*0.1 + hw2*0.1 + hw3*0.1 + midterm*0.3 + _final*0.4;
-    return Math.round(grade * 100.0) / 100.0;
+    return Math.round(grade * 10.0) / 10.0;
   }
 
 }
