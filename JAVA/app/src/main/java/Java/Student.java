@@ -68,8 +68,7 @@ public class Student {
 
   public double getGrade() {
     double grade = hw1*0.1 + hw2*0.1 + hw3*0.1 + midterm*0.3 + _final*0.4;
-    BigDecimal value = new BigDecimal(grade).setScale(1, RoundingMode.HALF_EVEN);
+    BigDecimal value = new BigDecimal(grade).setScale(0, RoundingMode.HALF_EVEN);
     return value.doubleValue();
   }
-
 }
